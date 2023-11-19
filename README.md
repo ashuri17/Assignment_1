@@ -1,10 +1,6 @@
 # Assignment_1
 Assignment 1
-<<<<<<< HEAD
 My Website Theme: Build a Website for an eSports Team(Paper Rex)
-=======
-Website Theme: Build a website for an eSports Team known as Paper Rex.
->>>>>>> 696c47da9f19f98d2e033c0efe6a64565c2e4f48
 
 External user's goal:
 The users of the website are current fans of eSports and are willing to 
