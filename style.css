@@ -1,5 +1,73 @@
-#nav-border{
-    width:500px;
-    background-color: black;
-    
+body{
+    font-family:'Segoe UI';
 }
+
+.nav img{
+    position:relative;
+    right:500px;
+    width:80px;
+}
+
+.nav{
+    display:flex;
+    justify-Content:flex-end;
+    align-items: center;
+    background-color: black;
+}
+.nav a{
+    font-size: 33px;
+    position:relative;
+    right:100px;
+    text-align: center;
+    padding-right:35px;
+    text-decoration: none;
+    color:white;
+}
+.nav a:hover{
+    text-decoration:underline;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 0.4s ease;
+}
+
+.social a img{
+    width:40px;
+    position:relative;
+    left:30px;
+    padding-right:20px;
+}
+iframe{
+    position:relative;
+    left:30px;
+}
+h2{
+    position:relative;
+    left:30px;
+}
+
+#prxgrp{
+    position:relative;
+    width:100%;
+}
+.VALORANT{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    flex-wrap:wrap;
+}
+.VALORANT p{
+    margin-left:150px;
+    margin-right:150px;
+}
+.Players a img{
+    width:30%;
+    margin-left:25px;
+    margin-top:25px;
+    border: black solid 2px;
+}
+.Players a img:hover{
+    filter:brightness(40%);
+    transition: filter 0.4s ease;
+}
+
+
+
