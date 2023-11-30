@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width", initial-scale=1">
         <title>Home Page</title>
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
         <nav>
         <div class = "nav">
-        <a href = "index.html"><img src = "PRX-Logomark-2.png"></a>
-        <a href = "teams.html">Teams</a>
-        <a>About</a>
-        <a>Partners</a>
-        <a>Shop</a>
-        <a>Contact</a>
+            <ul>
+                <li class = "navlogo"><a href = "index.html"><img src = "PRX-Logomark-2.png"></a></li>
+                <li class = "hide"><a href = "teams.html">Teams</a></li>
+                <li class = "hide"><a href = "about.html">About</a></li>
+                <li class = "hide"><a href = "partners.html">Partners</a></li>
+                <li class = "hide"><a href = "shop.html">Shop</a></li>
+                <li class = "hide"><a href = "contact.html">Contact</a></li>
+                <li onclick = "openSidebar()" id = "menu">&#9776;</li>
+            </ul>
         </div>
+        <div class = "sidebar" id = "verticalsidebar">
+            <ul>
+                <li onclick = "closeSidebar()" id = "close">&times;</li>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "teams.html">Teams</a></li>
+                <li><a href = "about.html">About</a></li>
+                <li><a href = "partners.html">Partners</a></li>
+                <li><a href = "shop.html">Shop</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+            </div>
         </nav>  
-
         <img src = "Assg1_img/PRX2023@VCT2.jpg" id = 'prxgrp'>
         <br>
         <h2>Watch our latest video!</h2>
-        <iframe width="1178" height="650"src="https://www.youtube.com/embed/eE1oZ4dE_xg?si=vuLmU8Z5BYwBq-y-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="100%" height="650"src="https://www.youtube.com/embed/eE1oZ4dE_xg?si=vuLmU8Z5BYwBq-y-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <h2>Follow our socials!</h2>
         <div class = "social">
             <a href = "https://www.instagram.com/pprxteam/?hl=en"><img src ="Assg1_img/Instagram_Glyph_Gradient.png" alt = "Instagram Logo"></a>
@@ -28,5 +42,6 @@
             <a href = "https://discord.com/invite/zhdbVSAUsc"><img src ="Assg1_img/discord-mark-blue.png" alt = "Discord Logo"></a>
         </div>
         
+        <script src="script.js"></script>
     </body>
 </html>

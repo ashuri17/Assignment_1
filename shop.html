@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop Page</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <nav>
+            <div class = "nav">
+                <ul>
+                    <li class = "navlogo"><a href = "index.html"><img src = "PRX-Logomark-2.png"></a></li>
+                    <li class = "hide"><a href = "teams.html">Teams</a></li>
+                    <li class = "hide"><a href = "about.html">About</a></li>
+                    <li class = "hide"><a href = "partners.html">Partners</a></li>
+                    <li class = "hide"><a href = "shop.html">Shop</a></li>
+                    <li class = "hide"><a href = "contact.html">Contact</a></li>
+                    <li onclick = "openSidebar()" id = "menu">&#9776;</li>
+                </ul>
+            </div>
+            <div class = "sidebar" id = "verticalsidebar">
+                <ul>
+                    <li onclick = "closeSidebar()" id = "close">&times;</li>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "teams.html">Teams</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li><a href = "partners.html">Partners</a></li>
+                    <li><a href = "shop.html">Shop</a></li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <img src = "Assg1_img/wgaming merch banner'.png" id ="shopbanner">
+        </div>
+        <div class = "shop">
+            <h1 id="shop-header">WGAMING Collection</h1>
+            <a><img src = "Assg1_img/racergrayhoodieW.jpg"></a>
+            <a><img src = "Assg1_img/footballjerseyW.jpg"></a>
+            <span>
+                <h4>WGAMING Racer Gray Hoodie</h4>
+                <h4>WGAMING Football Jersey</h4>
+            </span>
+            <a><img src = "Assg1_img/blackhoodieW2.jpg"></a>
+            <a><img src = "Assg1_img/blackhoodieW1.jpg"></a>
+            <span>
+                <h4>WGAMING Creativity Black Hoodie</h4>
+                <h4>WGAMING Impossible Black Hoodie</h4>
+            </span>
+        </div>
+        <script src = "script.js"></script>
+    </body>

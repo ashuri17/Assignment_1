@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home Page</title>
+        <title>Team Page</title>
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
         <nav>
             <div class = "nav">
-            <a href = "index.html"><img src = "PRX-Logomark-2.png"></a>
-            <a href = "teams.html">Teams</a>
-            <a>About</a>
-            <a>Partners</a>
-            <a>Shop</a>
-            <a>Contact</a>
+                <ul>
+                    <li class = "navlogo"><a href = "index.html"><img src = "PRX-Logomark-2.png"></a></li>
+                    <li class = "hide"><a href = "teams.html">Teams</a></li>
+                    <li class = "hide"><a href = "about.html">About</a></li>
+                    <li class = "hide"><a href = "partners.html">Partners</a></li>
+                    <li class = "hide"><a href = "shop.html">Shop</a></li>
+                    <li class = "hide"><a href = "contact.html">Contact</a></li>
+                    <li onclick = "openSidebar()" id = "menu">&#9776;</li>
+                </ul>
             </div>
-        </nav>  
+            <div class = "sidebar" id = "verticalsidebar">
+                <ul>
+                    <li onclick = "closeSidebar()" id = "close">&times;</li>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "teams.html">Teams</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li><a href = "partners.html">Partners</a></li>
+                    <li><a href = "shop.html">Shop</a></li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <img src = "Assg1_img/paper rex trophy lift.png" id = "prxgrp">
         <div class = "VALORANT">
@@ -36,13 +50,31 @@
             </p>
             <h1>The Players</h1>
         </div>
+        <div class = "Players-container">
         <div class = "Players">
-            <a><img src = "Assg1_img/smthlikeyou11 portrait.jpg"></a>
-            <a><img src = "Assg1_img/davai paper rex portrait.jpg"></a>
-            <a><img src = "Assg1_img/jing prx portrait.jpg"></a>
-            <a><img src = "Assg1_img/f0rsaken prx portrait.jpg"></a>
-            <a><img src = "Assg1_img/mindfreak portrait.jpg"></a>
-            <a><img src = "Assg1_img/monyet paper rex.jpg"></a>
+            <a href = "something.html"><img src = "Assg1_img/smthlikeyou11 portrait.jpg"></a>
+            <h4>something</h4>
         </div>
-
+        <div class = "Players">
+            <a href = "d4v41.html"><img src = "Assg1_img/davai paper rex portrait.jpg"></a>
+            <h4>d4v41</h4>
+        </div>
+        <div class = "Players">
+            <a href = "Jinggg.html"><img src = "Assg1_img/jing prx portrait.jpg"></a>
+            <h4>Jinggg</h4>
+        </div>
+        <div class = "Players">
+            <a href = "f0rsaken.html"><img src = "Assg1_img/f0rsaken prx portrait.jpg"></a>
+            <h4>f0rsaken</h4>
+        </div>
+        <div class = "Players">
+            <a href = "mindfreak.html"><img src = "Assg1_img/mindfreak portrait.jpg"></a>
+            <h4>mindfreak</h4>
+        </div>
+        <div class = "Players">
+            <a href = "Monyet.html"><img src = "Assg1_img/monyet paper rex.jpg"></a>
+            <h4>Monyet</h4>
+        </div>
+        </div>
+        <script src = "script.js"></script>
     </body>

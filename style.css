@@ -1,72 +1,330 @@
 body{
     font-family:'Segoe UI';
+    overflow-y:scroll;
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
 }
-
+/*navigation*/
 .nav img{
-    position:relative;
-    right:500px;
+    display:flex;
     width:80px;
+    position:absolute;
+}
+.nav li:first-child{
+    margin-right:auto;
+}
+#menu{
+    display:none;
+    color:white;
+    align-items:center;
+    position:relative;
+    right:10px;
 }
 
 .nav{
     display:flex;
-    justify-Content:flex-end;
+    justify-Content:flex-start;
+    flex-wrap:nowrap;
     align-items: center;
     background-color: black;
 }
+.nav ul{
+    display:flex;
+    list-style:none;
+    justify-content:flex-end;
+    align-items:center;
+    width:100%;
+}
+.nav li{
+    height:50px;
+    font-size:35px;
+}
 .nav a{
-    font-size: 33px;
-    position:relative;
-    right:100px;
-    text-align: center;
-    padding-right:35px;
-    text-decoration: none;
+    height:100%;
+    margin-right:30px;
+    text-decoration:underline transparent;
+    display:flex;
+    align-items:center;
     color:white;
+    transition:text-decoration 0.2s ease;
 }
 .nav a:hover{
     text-decoration:underline;
     text-decoration-thickness: 2px;
-    transition: text-decoration 0.4s ease;
+}
+.sidebar{
+    display:none;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    position:fixed;
+    top:0px;
+    right:0px;
+    z-index:2;
+    background-color:white;
+    height:100vh;
+    width:50%;
+    border-bottom: solid black 1px;
+
+}
+.sidebar li{
+    font-size:20px;
+    width:100%;
+    list-style:none;
+    margin-bottom:20px;
+
+}
+.sidebar a{
+    text-decoration: none;
 }
 
-.social a img{
+
+
+
+/*Homepage*/
+.social a img{      /*social media logos*/
     width:40px;
     position:relative;
     left:30px;
     padding-right:20px;
 }
-iframe{
+iframe,h2{          /*youtube video + header*/
     position:relative;
     left:30px;
 }
 h2{
-    position:relative;
-    left:30px;
+    font-style:italic;
 }
 
-#prxgrp{
-    position:relative;
+
+
+
+/*Teams page*/
+#prxgrp,#shopbanner{    /*Paper Rex banner + Shop Page Banner*/
     width:100%;
 }
-.VALORANT{
+.VALORANT{              /*VALORANT Team info*/
     display:flex;
     justify-content:center;
     text-align:center;
     flex-wrap:wrap;
 }
-.VALORANT p{
+.VALORANT h1{           /*VALORANT Header*/
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+}
+
+.VALORANT p,.aboutus p{ /*VALORANT Team Paragraph + About Page Paragraph*/
     margin-left:150px;
     margin-right:150px;
 }
-.Players a img{
-    width:30%;
-    margin-left:25px;
-    margin-top:25px;
-    border: black solid 2px;
+
+/*Players portraits + Shop Page Products*/
+
+.Players-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
-.Players a img:hover{
-    filter:brightness(40%);
+
+.Players {
+    width: 30%;
+    margin: 5px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.Players img {
+    width: 100%; 
+    height: auto;
+    border:1px black solid;
+}
+
+.Players h4 {
+    margin: 5px 0; 
+}
+.Players a img:hover,.shop a img:hover{
+    filter:brightness(50%);
     transition: filter 0.4s ease;
+}
+
+
+/*About page*/
+.aboutus{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+#blacklogo{     /*Black Paper Rex Logo*/
+    width:20%;
+}
+
+
+
+/*Partner page*/
+#partner-header{
+    position:relative;
+    left:30px; 
+    margin-top:50px;
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+}
+.partner{
+    display:flex;
+    flex-wrap:nowrap;
+    margin-top:30px;
+    margin-left:30px;
+
+}
+.partner b{
+    font-size:larger;
+    font-style:italic;
+    text-decoration:underline;
+    text-decoration-thickness: 2px;
+}
+.partner p{
+    margin-left:20px;
+    margin-right:180px;
+    font-size:larger;
+}
+.partner p span{
+    font-style:italic;
+}
+.partner img{
+    width:400px;
+    border: solid 1px black;
+}
+
+/*Shop Page*/
+
+
+#shopbanner{
+    filter:brightness(30%);
+    position:relative;
+}
+
+#shop-header{
+    padding-top:20px;
+    text-align:center;
+    text-decoration:underline;
+    font-style:italic;
+}
+.shop a img{
+    position:relative;
+    left:30px;
+    width:45%;
+    text-align:center;
+}
+.info{
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+    margin-top:50px;
+    margin-left:80px;
+}
+
+.info p{
+    margin-left:50px;
+    margin-right:100px;
+    font-size:30px;
+}
+
+.info img{
+    height:470px;
+    border:solid black 2px;
+}
+.playername{
+    text-align:center;
+}
+.playername p{
+    position:relative;
+    right:515px;
+}
+.playername b{
+    font-size:larger;
+}
+
+.contactus{
+    margin-top:80px;
+    margin-left:50px;
+    font-size:30px
+}
+
+@media screen and (max-width:820px){
+    body{
+        overflow:auto;
+    }
+    /*NAVIGATION BAR TO SIDEBAR*/
+    .nav,iframe{
+        position:relative;
+        left:0px;
+        width:100%;
+    }
+    .hide{
+        display:none;
+    }
+    #menu{
+        display:flex;        
+    }
+    .sidebar li{
+        position:relative;
+        right:10px;
+        font-size:27px;
+    }
+
+    /*Home Page MOBILE*/
+    h2,#partner-header{
+       text-align:center; 
+       left:0px;
+    }
+    .social{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .social a img{
+        left:10px;
+    }
+
+    /*Team Page MOBILE*/
+    .Players{
+        width: 100%;
+    }
+    .Players img{
+        width:50%;
+    }
+
+
+    /*Partner Page MOBILE*/
+    .partner{
+        flex-wrap:wrap;
+        margin-left:0px;
+    }
+    .partner img{
+        width:100vw;
+    }
+    .partner p{
+        margin-right:20px;
+        margin-left:20px;
+        text-align:center;
+    }
+
+    /*About Us Page MOBILE*/
+    .aboutus p{
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .Players a img{
+        width:44%;
+    }
+    .Players img{
+        flex-shrink:0;
+
+    }
 }
 
 
