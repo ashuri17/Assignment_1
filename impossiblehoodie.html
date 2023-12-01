@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Impossible hoodie</title>
+        <link rel = "stylesheet" href = "https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <!--no navigation bar for this page(back button to go back)-->
+        <a href = "shop.html"><img src = "Assg1_img/angle-left.png" alt = "angle-left" id = "back-button"></a>
+        <div class = "product-container">
+            <div class = "product-name">
+                <img src = "Assg1_img/blackhoodieW1.jpg" alt = "Impossible Black Hoodie">
+                <p>
+                    WGAMING Impossible Black Hoodie<br>
+                    <b>$89.99</b>
+                </p>
+            </div>
+            <section class = "boxes">
+                <div class = "dropdown">
+                    <h4>Size:</h4>
+                    <button class="dropdown-button" onclick="toggleDropdown()"><img src = "Assg1_img/angle-small-down.png" alt = "angle-down"></button>
+                    <div class="dropdown-content" id="dropdownID">
+                        <ul>
+                        <li onclick = "toggleDropdown()">XS</li>
+                        <li onclick = "toggleDropdown()">S</li>
+                        <li onclick = "toggleDropdown()">M</li>
+                        <li onclick = "toggleDropdown()">L</li>
+                        <li onclick = "toggleDropdown()">XL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "quantity">
+                    <h4>Quantity:</h4>
+                    <button class="quantity-button">-<img src = "Assg1_img/plus.png" alt = "plus"></button>
+                </div>
+
+                    <a href = "shop.html" class = "purchase">
+                        <h4>Purchase</h4>
+                    </a>
+
+
+            </section>
+        </div>
+        <script src = "script.js"></script>
+    </body>

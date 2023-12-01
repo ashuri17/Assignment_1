@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
-        <meta name="viewport" content="width=device-width", initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Home Page</title>
+        <link rel = "stylesheet" href = "https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
         <nav>
         <div class = "nav">
             <ul>
-                <li class = "navlogo"><a href = "index.html"><img src = "PRX-Logomark-2.png"></a></li>
+                <li class = "navlogo"><a href = "index.html"><img src = "Assg1_img/PRX-Logomark-2.png" alt = "white PRX logo"></a></li>
                 <li class = "hide"><a href = "teams.html">Teams</a></li>
                 <li class = "hide"><a href = "about.html">About</a></li>
                 <li class = "hide"><a href = "partners.html">Partners</a></li>
                 <li class = "hide"><a href = "shop.html">Shop</a></li>
                 <li class = "hide"><a href = "contact.html">Contact</a></li>
-                <li onclick = "openSidebar()" id = "menu">&#9776;</li>
+                <li onclick = "openSidebar()" id = "menu">&#9776;</li><!--hamburger menu hidden, only appears when MOBILE-->
             </ul>
         </div>
+
+        <!--sidebar hidden(only can be used when on MOBILE)-->
         <div class = "sidebar" id = "verticalsidebar">
             <ul>
                 <li onclick = "closeSidebar()" id = "close">&times;</li>
@@ -29,18 +33,21 @@
                 <li><a href = "contact.html">Contact</a></li>
             </ul>
             </div>
-        </nav>  
-        <img src = "Assg1_img/PRX2023@VCT2.jpg" id = 'prxgrp'>
+        </nav>
+        <!--main content-->  
+        <main>
+        <img src = "Assg1_img/PRX2023@VCT2.jpg" alt = "paper rex grpshot" id = 'prxgrp'>
         <br>
         <h2>Watch our latest video!</h2>
-        <iframe width="100%" height="650"src="https://www.youtube.com/embed/eE1oZ4dE_xg?si=vuLmU8Z5BYwBq-y-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="1178" height="650" src="https://www.youtube.com/embed/eE1oZ4dE_xg?si=vuLmU8Z5BYwBq-y-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <h2>Follow our socials!</h2>
         <div class = "social">
             <a href = "https://www.instagram.com/pprxteam/?hl=en"><img src ="Assg1_img/Instagram_Glyph_Gradient.png" alt = "Instagram Logo"></a>
-            <a href = "https://twitter.com/pprxteam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src ="Assg1_img/2021 Twitter logo - blue.png" alt = "Twitter Logo"></a>
+            <a href = "https://twitter.com/pprxteam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src ="Assg1_img/2021Twitterlogo-blue.png" alt = "Twitter Logo"></a>
             <a href = "https://www.youtube.com/@PaperRex"><img src ="Assg1_img/yt_icon_rgb.png" alt = "Youtube Logo"></a>
             <a href = "https://discord.com/invite/zhdbVSAUsc"><img src ="Assg1_img/discord-mark-blue.png" alt = "Discord Logo"></a>
         </div>
+        </main>
         
         <script src="script.js"></script>
     </body>

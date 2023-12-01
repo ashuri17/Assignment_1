@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>something</title>
+        <link rel = "stylesheet" href = "https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
         <nav>
-            <nav>
-                <div class = "nav">
+            <div class = "nav">
                     <ul>
-                        <li class = "navlogo"><a href = "index.html"><img src = "PRX-Logomark-2.png"></a></li>
+                        <li class = "navlogo"><a href = "index.html"><img src = "Assg1_img/PRX-Logomark-2.png" alt = "white PRX logo"></a></li>
                         <li class = "hide"><a href = "teams.html">Teams</a></li>
                         <li class = "hide"><a href = "about.html">About</a></li>
                         <li class = "hide"><a href = "partners.html">Partners</a></li>
                         <li class = "hide"><a href = "shop.html">Shop</a></li>
                         <li class = "hide"><a href = "contact.html">Contact</a></li>
-                        <li onclick = "openSidebar()" id = "menu">&#9776;</li>
+                        <li onclick = "openSidebar()" id = "menu">&#9776;</li><!--hamburger menu hidden,appears when on MOBILE-->
                     </ul>
                 </div>
+                <!--sidebar hidden(only appears on Mobile)-->
                 <div class = "sidebar" id = "verticalsidebar">
                     <ul>
                         <li onclick = "closeSidebar()" id = "close">&times;</li>
@@ -28,11 +31,19 @@
                         <li><a href = "shop.html">Shop</a></li>
                         <li><a href = "contact.html">Contact</a></li>
                     </ul>
-                </div>
-            </nav>
-        </nav> 
+            </div>
+        </nav>
+        <!--Main Content-->
+        <main>
+        <div class = "player-container">
+        <div class = "playername">
+            <img src = "Assg1_img/smthlikeyou11%20portrait.jpg" alt = "something portrait">
+            <p>
+                <b>something</b><br>
+                Ilya Petrov
+            </p>
+        </div>
         <div class = "info">
-            <img src = "Assg1_img/smthlikeyou11 portrait.jpg">
             <p>
                 Ilya "something" Petrov is a Russian Player joined
                 the team on March 22, 2023. He previously
@@ -40,11 +51,7 @@
                 Insomnia before joining Paper Rex.   
             </p>
         </div>
-        <div class = "playername">
-            <p>
-                <b>something</b><br>
-                Ilya Petrov
-            </p>
         </div>
         <script src = "script.js"></script>
+        </main>
     </body>

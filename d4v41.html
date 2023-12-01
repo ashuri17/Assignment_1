@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
-        <title>something</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>d4v41</title>
+        <link rel = "stylesheet" href = "https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
         <nav>
             <div class = "nav">
                 <ul>
-                    <li class = "navlogo"><a href = "index.html"><img src = "PRX-Logomark-2.png"></a></li>
+                    <li class = "navlogo"><a href = "index.html"><img src = "Assg1_img/PRX-Logomark-2.png" alt = "white PRX logo"></a></li>
                     <li class = "hide"><a href = "teams.html">Teams</a></li>
                     <li class = "hide"><a href = "about.html">About</a></li>
                     <li class = "hide"><a href = "partners.html">Partners</a></li>
                     <li class = "hide"><a href = "shop.html">Shop</a></li>
                     <li class = "hide"><a href = "contact.html">Contact</a></li>
-                    <li onclick = "openSidebar()" id = "menu">&#9776;</li>
+                    <li onclick = "openSidebar()" id = "menu">&#9776;</li><!--hamburger menu hidden,appears when on MOBILE-->
                 </ul>
             </div>
+            <!--sidebar hidden(only can be used when on MOBILE)-->
             <div class = "sidebar" id = "verticalsidebar">
                 <ul>
                     <li onclick = "closeSidebar()" id = "close">&times;</li>
@@ -29,8 +33,17 @@
                 </ul>
             </div>
         </nav>
+        <!--Main Content-->
+        <main>
+        <div class = "player-container">
+            <div class = "playername">
+                <img src = "Assg1_img/davai%20paper%20rex%20portrait.jpg" alt ="d4v41 portrait">
+                <p>
+                    <b>d4v41</b><br>
+                    Ahmad Khalish Rusyaidee bin Nordin
+                </p>
+            </div>
         <div class = "info">
-            <img src = "Assg1_img/davai paper rex portrait.jpg">
             <p>
                 Khalish "d4v41" Rusyaidee is an Malaysian player 
                 who joined the team on February 8, 2023. He previously
@@ -39,11 +52,7 @@
                 CS:GO roster.
             </p>
         </div>
-        <div class = "playername">
-            <p>
-                <b>d4v41</b><br>
-                Ahmad Khalish Rusyaidee bin Nordin
-            </p>
-        </div>
+       </div>
+       </main>
         <script src = "script.js"></script>
     </body>

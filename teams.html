@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Team Page</title>
+        <link rel = "stylesheet" href = "https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
         <nav>
             <div class = "nav">
                 <ul>
-                    <li class = "navlogo"><a href = "index.html"><img src = "PRX-Logomark-2.png"></a></li>
+                    <li class = "navlogo"><a href = "index.html"><img src = "Assg1_img/PRX-Logomark-2.png" alt = "white PRX logo"></a></li>
                     <li class = "hide"><a href = "teams.html">Teams</a></li>
                     <li class = "hide"><a href = "about.html">About</a></li>
                     <li class = "hide"><a href = "partners.html">Partners</a></li>
                     <li class = "hide"><a href = "shop.html">Shop</a></li>
                     <li class = "hide"><a href = "contact.html">Contact</a></li>
-                    <li onclick = "openSidebar()" id = "menu">&#9776;</li>
+                    <li onclick = "openSidebar()" id = "menu">&#9776;</li><!--hamburger menu hidden,appears when on MOBILE-->
                 </ul>
             </div>
+            <!--sidebar hidden, appears on Mobile-->
             <div class = "sidebar" id = "verticalsidebar">
                 <ul>
                     <li onclick = "closeSidebar()" id = "close">&times;</li>
@@ -29,8 +33,9 @@
                 </ul>
             </div>
         </nav>
-
-        <img src = "Assg1_img/paper rex trophy lift.png" id = "prxgrp">
+        <!--Main Content-->
+        <main>
+        <img src = "Assg1_img/paper%20rex%20trophy%20lift.png" alt = "PRX trophy lift" id = "prxgrp">
         <div class = "VALORANT">
             <h1>VALORANT</h1>
             <p>In February 2021, Paper Rex entered the VALORANT 
@@ -50,31 +55,33 @@
             </p>
             <h1>The Players</h1>
         </div>
+        <!--Many divs to align the player portraits-->
         <div class = "Players-container">
         <div class = "Players">
-            <a href = "something.html"><img src = "Assg1_img/smthlikeyou11 portrait.jpg"></a>
+            <a href = "something.html"><img src = "Assg1_img/smthlikeyou11%20portrait.jpg" alt = "something portrait"></a>
             <h4>something</h4>
         </div>
         <div class = "Players">
-            <a href = "d4v41.html"><img src = "Assg1_img/davai paper rex portrait.jpg"></a>
+            <a href = "d4v41.html"><img src = "Assg1_img/davai&20paper%20rex%20portrait.jpg" alt = "d4v41 portrait"></a>
             <h4>d4v41</h4>
         </div>
         <div class = "Players">
-            <a href = "Jinggg.html"><img src = "Assg1_img/jing prx portrait.jpg"></a>
+            <a href = "Jinggg.html"><img src = "Assg1_img/jing%20prx%20portrait.jpg" alt = "Jinggg portrait"></a>
             <h4>Jinggg</h4>
         </div>
         <div class = "Players">
-            <a href = "f0rsaken.html"><img src = "Assg1_img/f0rsaken prx portrait.jpg"></a>
+            <a href = "f0rsaken.html"><img src = "Assg1_img/f0rsaken%20prx%20portrait.jpg" alt = "f0rsaken portrait"></a>
             <h4>f0rsaken</h4>
         </div>
         <div class = "Players">
-            <a href = "mindfreak.html"><img src = "Assg1_img/mindfreak portrait.jpg"></a>
+            <a href = "mindfreak.html"><img src = "Assg1_img/mindfreak%20portrait.jpg" alt = "mindfreak portrait"></a>
             <h4>mindfreak</h4>
         </div>
         <div class = "Players">
-            <a href = "Monyet.html"><img src = "Assg1_img/monyet paper rex.jpg"></a>
+            <a href = "Monyet.html"><img src = "Assg1_img/monyet%20paper%20rex.jpg" alt = "Monyet portrait"></a>
             <h4>Monyet</h4>
         </div>
         </div>
+        </main>
         <script src = "script.js"></script>
     </body>

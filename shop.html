@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Shop Page</title>
+        <link rel = "stylesheet" href = "https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
         <nav>
             <div class = "nav">
                 <ul>
-                    <li class = "navlogo"><a href = "index.html"><img src = "PRX-Logomark-2.png"></a></li>
+                    <li class = "navlogo"><a href = "index.html"><img src = "Assg1_img/PRX-Logomark-2.png" alt = "white PRX logo"></a></li>
                     <li class = "hide"><a href = "teams.html">Teams</a></li>
                     <li class = "hide"><a href = "about.html">About</a></li>
                     <li class = "hide"><a href = "partners.html">Partners</a></li>
                     <li class = "hide"><a href = "shop.html">Shop</a></li>
                     <li class = "hide"><a href = "contact.html">Contact</a></li>
-                    <li onclick = "openSidebar()" id = "menu">&#9776;</li>
+                    <li onclick = "openSidebar()" id = "menu">&#9776;</li><!--hamburger menu hidden,appears when on MOBILE-->
                 </ul>
             </div>
             <div class = "sidebar" id = "verticalsidebar">
                 <ul>
+                    <!--sidebar hidden(only appears on Mobile)-->
                     <li onclick = "closeSidebar()" id = "close">&times;</li>
                     <li><a href = "index.html">Home</a></li>
                     <li><a href = "teams.html">Teams</a></li>
@@ -29,23 +33,31 @@
                 </ul>
             </div>
         </nav>
+        <!--Main Content-->
+        <main>
         <div>
-            <img src = "Assg1_img/wgaming merch banner'.png" id ="shopbanner">
+            <img src = "Assg1_img/wgaming%20merch%20banner'.png" id ="shopbanner" alt = "merch banner">
         </div>
-        <div class = "shop">
-            <h1 id="shop-header">WGAMING Collection</h1>
-            <a><img src = "Assg1_img/racergrayhoodieW.jpg"></a>
-            <a><img src = "Assg1_img/footballjerseyW.jpg"></a>
-            <span>
-                <h4>WGAMING Racer Gray Hoodie</h4>
-                <h4>WGAMING Football Jersey</h4>
-            </span>
-            <a><img src = "Assg1_img/blackhoodieW2.jpg"></a>
-            <a><img src = "Assg1_img/blackhoodieW1.jpg"></a>
-            <span>
-                <h4>WGAMING Creativity Black Hoodie</h4>
-                <h4>WGAMING Impossible Black Hoodie</h4>
-            </span>
+        <!--many divs to align the types of apparel-->
+        <h1 id="shop-header">WGAMING Collection</h1>
+        <div class = "shop-container">
+        <div class = "product">
+            <a href = "racergrayhoodie.html"><img src = "Assg1_img/racergrayhoodieW.jpg" alt = "Racer Gray Hoodie"></a>
+            <h4>WGAMING Racer Gray Hoodie</h4>
         </div>
+        <div class = "product">
+            <a href = "footballjersey.html"><img src = "Assg1_img/footballjerseyW.jpg" alt = "Football Jersey"></a>
+            <h4>WGAMING Football Jersey</h4>
+        </div>
+        <div class = "product">
+            <a href = "creativityhoodie.html"><img src = "Assg1_img/blackhoodieW2.jpg" alt = "Creativity Black Hoodie"></a>
+            <h4>WGAMING Creativity Black Hoodie</h4>
+        </div>
+        <div class = "product">
+            <a href = "impossiblehoodie.html"><img src = "Assg1_img/blackhoodieW1.jpg" alt = "Impossible Black Hoodie"></a>
+            <h4>WGAMING Impossible Black Hoodie</h4>
+        </div>
+        </div>
+        </main>
         <script src = "script.js"></script>
     </body>
